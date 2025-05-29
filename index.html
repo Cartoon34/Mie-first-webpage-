@@ -1,75 +1,21 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work Website</title>
-  <style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fff; color: #000; }
-
-header { background-color: red; color: white; padding: 20px; text-align: center; }
-
-nav ul { list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; background-color: darkred; }
-
-nav ul li { margin: 0 15px; }
-
-nav ul li a { color: white; text-decoration: none; font-weight: bold; }
-
-main { padding: 20px; }
-
-section { margin-bottom: 40px; }
-
-form { display: flex; flex-direction: column; max-width: 400px; margin-top: 10px; }
-
-form label, form input, form textarea, form button { margin-bottom: 10px; }
-
-form input, form textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
-
-form button { background-color: red; color: white; border: none; padding: 10px; cursor: pointer; border-radius: 5px; }
-
-form button:hover { background-color: darkred; }
-
-footer { background-color: red; color: white; text-align: center; padding: 10px; position: relative; bottom: 0; width: 100%; }
-
-    
-  </style>
+  <meta charset="UTF-8">
+  <title>Login UI</title>
+  <link rel="stylesheet" href="1746562510062.jpg">
 </head>
 <body>
-  <header>
-    <h1>My Website</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>  <section id="about">
-    <h2>About Me</h2>
-    <p>Welcome to my website. I'm a professional offering quality services in design, development, and more.</p>
-  </section>  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project One</h3>
-      <p>Description of project one.</p>
-    </div>
-    <div class="project">
-      <h3>Project Two</h3>
-      <p>Description of project two.</p>
-    </div>
-  </section>  <section id="contact">
-    <h2>Contact</h2>
-    <form id="contactForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required /><label for="email">Email:</label>
-  <input type="email" id="email" name="email" required />
+  <div class="login-box">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <p id="message"></p>
+    </form>
+  </div>
 
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" required></textarea>
-
-  <button type="submit">Send</button>
-</form>
-
-  </section>  <footer>
-    <p>&copy; 2025 My Work Website</p>
-  </footer>  <script src="script.js"></script></body>
+  <script src="script.js"></script>
+</body>
 </html>
