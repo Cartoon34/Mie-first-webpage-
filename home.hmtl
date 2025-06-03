@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+</head>
+<body>
+  <h1>Welcome To Makatsela CV</h1>
+  <img src="imagine.jpg" alt="A nice photo" width="500">
+</body>
+</html>
