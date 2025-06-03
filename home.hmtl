@@ -1,10 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Home Page</title>
-</head>
-<body>
-  <h1>Welcome To Makatsela CV</h1>
-  <img src="imagine.jpg" alt="A nice photo" width="500">
-</body>
-</html>
+#about {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#about h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#about p {
+  color: #555;
+  line-height: 1.6;
+}<section id="about">
+  <h2>About Us</h2>
+  <p>
+    Welcome to our website! We offer a short programming course designed for beginners.
+    Whether you're completely new to coding or just want to brush up on the basics,
+    our course is a great place to start. You'll learn HTML, CSS, and JavaScript by building real projects.
+  </p>
+</section>
