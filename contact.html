@@ -2,44 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us</title>
   <style>
-  body {
-    background-image: url('email.jpg');
-    background-size: cover;                 
-    background-repeat: no-repeat;           
-    background-position: center;           
-    font-family: Arial, sans-serif;
-    height:150vh;
-  }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .success-message {
+      text-align: center;
+      color: green;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <h2>Contact Us</h2>
-  <form action="#" method="post">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required />
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="6" required></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
-    <button type="submit">Send Message</button>
-  </form>
+      <button type="submit">Send Message</button>
+    </form>
 
-  <div class="info">
-    <p>Email us at: smakatsela68@gmail.com</p>
-    <p>Call us: +26668557004</p>
-    <a href="https://wa.me/qr/4JD3LHWTVHVCJ1 target="_blank">
-  Chat with us on WhatsApp
-    </a>
+    <div class="success-message" id="successMessage" style="display:none;">
+      Thank you! Your message has been sent.
+    </div>
   </div>
-</div>
 
+  <script>
+    const form = document.getElementById("contactForm");
+    const successMessage = document.getElementById("successMessage");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // prevent actual form submission
+      successMessage.style.display = "block";
+      form.reset();
+    });
+  </script>
 </body>
 </html>
