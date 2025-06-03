@@ -1,25 +1,61 @@
-#about {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f4f4f4;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
 
-#about h2 {
-  color: #333;
-  margin-bottom: 15px;
-}
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-#about p {
-  color: #555;
-  line-height: 1.6;
-}<section id="about">
-  <h2>About Us</h2>
-  <p>
-    Welcome to our website! We offer a short programming course designed for beginners.
-    Whether you're completely new to coding or just want to brush up on the basics,
-    our course is a great place to start. You'll learn HTML, CSS, and JavaScript by building real projects.
-  </p>
-</section>
+    section#about {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #003366;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About Us</h1>
+  </header>
+
+  <section id="about">
+    <h2>Who We Are</h2>
+    <p>
+      We are a passionate team of educators and developers who love to help beginners get started with programming.
+      Our goal is to make coding fun, accessible, and practical for everyone.
+    </p>
+
+    <h2>What We Offer</h2>
+    <p>
+      Through our short programming courses, you'll learn the basics of HTML, CSS, and JavaScript. Whether you're
+      aiming to build websites, apps, or just learn a valuable new skill, we're here to guide you every step of the way.
+    </p>
+  </section>
+
+</body>
+</html>
