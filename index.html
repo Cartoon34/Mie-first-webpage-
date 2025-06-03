@@ -1,34 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About My Place</title>
-  <pre>
-  <code>
-    <span style="color: white;"></span><br>
-  </code>
-  </pre>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Menu</title>
   <style>
-  body {
-    background-image: url('imagine.jpg');
-    background-size: cover;                 
-    background-repeat: no-repeat;           
-    background-position: center;           
-    font-family: Arial, sans-serif;
-    height:150vh;
-  }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation Bar Styles */
+    nav {
+      background-color: #333;
+      padding: 15px 20px;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #ffcc00;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        display: none;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+    }
   </style>
 </head>
 <body>
+
   <nav>
-   <h <b href="index.html">Home</b></h>
-   <h2 <b href="about.html">About</b></h2>
-   <h3 <b href="contact.html">Contact</b></h3>
-   <h4 <b href="skills.html">Skills</b></h4>
-  </nav>
-      </div>
+    <div class="nav-container">
+      <a href="#" class="logo">MyWebsite</a>
+      <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
     </div>
-  </section>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("active");
+    }
+  </script>
+
 </body>
 </html>
