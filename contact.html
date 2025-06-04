@@ -62,36 +62,10 @@
   </style>
 </head>
 <body>
-
-  <div class="contact-container">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-
-    <div class="success-message" id="successMessage" style="display:none;">
-      Thank you! Your message has been sent.
-    </div>
-  </div>
-
-  <script>
-    const form = document.getElementById("contactForm");
-    const successMessage = document.getElementById("successMessage");
-
-    form.addEventListener("submit", function(event) {
-      event.preventDefault(); // prevent actual form submission
-      successMessage.style.display = "block";
-      form.reset();
-    });
-  </script>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: smakatsela68@gmail.com</p>
+    <p>Phone: +266 68557004</p>
+  </section>
 </body>
 </html>
