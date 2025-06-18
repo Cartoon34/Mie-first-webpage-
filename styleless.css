@@ -1,0 +1,31 @@
+body {
+  background-image: url('cr.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:100vh;
+    }
+    header {
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    nav {
+      padding: 30px;
+      text-align: center;
+      color: white;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      color: white;
+      text-align: bottom center;
+      padding: 10px;
+      margin-top: 150px;
+    }
